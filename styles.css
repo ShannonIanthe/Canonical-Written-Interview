@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Ubuntu:wght@300&display=swap');
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color:hsla(329,90%,13%,1);
+  background-image:
+  radial-gradient(at 38% 75%, hsla(312,85%,8%,1) 0px, transparent 50%),
+  radial-gradient(at 5% 9%, hsla(315,40%,17%,1) 0px, transparent 50%),
+  radial-gradient(at 14% 84%, hsla(310,68%,10%,1) 0px, transparent 50%);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(38, 38, 38);
+    min-height: 7vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.o-logo{
+    background-image: url("./images/button.png");
+    padding: 7px 10px 8.5px 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.nav-links {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    min-height: 40vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+    line-height: 2rem;
+}
+
+
+/* Accordian*/
+
