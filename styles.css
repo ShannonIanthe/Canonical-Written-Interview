@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Handlee&family=Lato:wght@100;300;400;700&family=Montserrat:wght@300;400&display=swap');
 
 *,
 html,
@@ -105,12 +105,20 @@ h1 {
   font-size: clamp(2rem, 10vw, 3.3rem);
 }
 
-.role1{
-    font-style: italic;
 
+
+.role1{
+    padding-bottom: 1rem;
+    color: rgb(18, 77, 97);
+    font-size: 300;
+    font-size: clamp(0.5rem, 7vw, 1.3rem);
+    letter-spacing: 1.4px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: .05px;
 }
 
-.role, .about-me {
+ .about-me {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +130,7 @@ h1 {
 .scroll {
     padding-top: 1rem;
     text-align: center;
-    color: rgb(80, 80, 80);
+    color: rgb(234, 234, 234);
     font-weight: 300;
 }
 .about-me{
@@ -170,6 +178,7 @@ h1 {
     padding: 1rem;
     font-family: 'Abril Fatface', cursive;    
     font-weight: 600;
+    text-align: center;
 }
 h3{
     font-family: 'Lato', sans-serif;
@@ -178,12 +187,16 @@ h3{
 .answers{
     flex: 2; /* additionally, equal width */
     width: 200px;
-    height: 300px;
+    max-height: 400px;
     overflow-y: scroll;
+    overflow: auto;
     text-align: justify;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     line-height: 1.3rem;
+}
+#grey{
+    background-color: rgb(182, 182, 182);
 }
 
 
@@ -196,9 +209,13 @@ h3{
         align-items: center;
         padding: 0;
     }
+    h3{
+        font-size: 15px;
+    }
     .answers{
         width: 90%;
         height: 50%;
+        -webkit-overflow-scrolling: touch;
     }
     .role1{
         text-align: center;
