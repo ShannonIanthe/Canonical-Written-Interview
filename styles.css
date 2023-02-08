@@ -1,77 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;300;400;700&display=swap');
 
 *,
 html,
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-  background-color:hsla(329,90%,13%,1);
-  background-image:
-  radial-gradient(at 38% 75%, hsla(312,85%,8%,1) 0px, transparent 50%),
-  radial-gradient(at 5% 9%, hsla(315,40%,17%,1) 0px, transparent 50%),
-  radial-gradient(at 14% 84%, hsla(310,68%,10%,1) 0px, transparent 50%);
-background-size: contain;
-background-repeat: no-repeat;
+/* Background */
+.background {
+    background: rgb(221, 139, 152);
+    min-height: 100vh;
+  }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* NAV */
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(38, 38, 38);
-    min-height: 7vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-family: 'Ubuntu', sans-serif;
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
 }
 
-.o-logo{
-    background-image: url("./images/button.png");
-    padding: 7px 10px 8.5px 6px;
-    background-repeat: no-repeat;
-    display: inline-block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  right: 8%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  backdrop-filter: blur(5px);
+}
+
 .nav-links {
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
+  padding: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+
 }
 
+
+/*MAIN*/
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10rem;
-    min-height: 40vh;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding: 0rem 3rem 6rem 3rem;
 }
 
-h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 100;
-    letter-spacing: 3px;
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;  
+  padding-bottom: 1.3rem;
+  font-size: clamp(2rem, 10vw, 3.3rem);
+}
+
+.role1{
+    font-style: italic;
+
+}
+
+.role, .about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;  
+  letter-spacing: 3px;
+  line-height: 2rem;
+  font-size: clamp(0.5rem, 7vw, 1.3rem);
+}
+.scroll {
+    padding-top: 1rem;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
+    color: rgb(80, 80, 80);
+    font-weight: 300;
 }
-
-p {
+.about-me{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.extra-info{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 3px;
-    line-height: 2rem;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 60px;
+    min-width: 90%;
+}
+
+.linkedin{
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.download{
+    border-radius: 15px;
+    padding: 8px 8px;
+    border: transparent;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.download:hover{
+    background-color: rgb(136, 174, 136);
+}
+
+/*High School*/
+.high-school{
+    display: flex;
+    overflow: hidden;
+    min-height: 40vh;
+    padding: 2rem 1rem;
+}
+.title{
+    flex: 1; /* additionally, equal width */
+    padding: 1rem;
+    font-family: 'Abril Fatface', cursive;    
+    font-weight: 600;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.answers{
+    flex: 2; /* additionally, equal width */
+    width: 200px;
+    height: 300px;
+    overflow-y: scroll;
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.3rem;
 }
 
 
-/* Accordian*/
+
+
+@media all and (max-width: 500px){
+    .high-school{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .answers{
+        width: 90%;
+        height: 50%;
+    }
+    .role1{
+        text-align: center;
+        padding: 1rem;
+    }
+    .role, .about-me{
+        line-height: 1.2rem;
+        padding: 0;
+        text-align: justify;
+        font-size: 14px;
+    }
+    .scroll{
+        font-size: 13px;
+    }
+    .extra-info{
+        bottom: 10px;
+    }
+}
 
