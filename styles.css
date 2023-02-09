@@ -114,8 +114,8 @@ h1 {
     font-size: clamp(0.5rem, 7vw, 1.3rem);
     letter-spacing: 1.4px;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
     text-decoration-thickness: .05px;
+    font-weight: 600;
 }
 
  .about-me {
@@ -149,6 +149,7 @@ h1 {
     text-decoration: none;
     color: rgb(233, 233, 233);
     cursor: pointer;
+    transition: 1s ease-in;
 }
 
 .download{
@@ -163,7 +164,18 @@ h1 {
 }
 
 .download:hover{
-    background-color: rgb(136, 174, 136);
+    background-color: rgb(18, 77, 97);
+    color: white;
+}
+.download2{
+  text-decoration: none;
+  color: black;
+}
+.download2:hover{
+  color: white;
+}
+.linkedin:hover{
+  color: rgb(18, 77, 97);
 }
 
 /*High School*/
@@ -199,6 +211,16 @@ h3{
     background-color: rgb(182, 182, 182);
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(118, 178, 197);
+  min-height: 5vh;
+  font-family: 'Lato', sans-serif;
+}
+
 
 
 
@@ -207,7 +229,10 @@ h3{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 2.3rem 1.3rem;
+    }
+    h2{
+      font-weight: 300;
     }
     h3{
         font-size: 15px;
